@@ -23,6 +23,13 @@ body.bg-sampul {
 	font-family: comorant, sans-serif;
 	padding-bottom: 40px;
 }
+.container2 {
+	background-image: url(./asset/bg-rsvp.png);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: comorant, sans-serif;
+}
 @media (min-height: 800px) {
 	.container1 {
 		background-image: url(./asset/bg-pengantin.png);
@@ -39,6 +46,14 @@ body.bg-sampul {
 		background-size: cover;
 		font-family: comorant, sans-serif;
 		padding-bottom: 40px;
+	}
+	.container2 {
+		background-image: url(./asset/bg-rsvp.png);
+		height: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-family: comorant, sans-serif;
+		padding-bottom: 110px;
 	}
 }
 @media (max-height: 860px), (max-width: 767px) {
@@ -100,13 +115,6 @@ body.bg-sampul {
 		font-family: comorant, sans-serif;
 		padding-bottom: 40px;
 	}
-}
-.container2 {
-	background-image: url(./asset/bg-rsvp.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	font-family: comorant, sans-serif;
-	padding-bottom: 110px;
 }
 
 @font-face {
@@ -500,6 +508,7 @@ button.btn.btn-coklat:hover {
 @media all and (max-width: 767px) {
 	.bungkus-jadwal {
 		display: block;
+		margin-top: 0;
 	}
 	.judul-jadwal {
 		font-weight: 700;
@@ -578,5 +587,40 @@ button.btn.btn-coklat:hover {
 	}
 	.card-jadwal button.btn.btn-coklat:hover {
 		background-color: #8b6400;
+	}
+}
+.card-rsvp {
+	width: 800px;
+	height: 100%;
+	border-radius: 20px;
+	background-color: rgba(152, 110, 1, 0.74);
+	padding: 20px 15px 0;
+	margin-top: 50px;
+}
+.judul-rsvp {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	padding: 0 15px;
+	color: #ffffff;
+}
+
+@media only screen and (max-width: 767px) {
+	.card-rsvp {
+		width: 320px;
+		height: 100%;
+		border-radius: 20px;
+		background-color: rgba(152, 110, 1, 0.74);
+		padding: 20px 15px 0;
+		margin-top: 50px;
+	}
+	.judul-rsvp {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 29px;
+		text-align: center;
+		padding: 0 15px;
+		color: #ffffff;
 	}
 }
