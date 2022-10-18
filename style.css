@@ -8,6 +8,32 @@ body.bg-sampul {
 	background-size: cover;
 	font-family: comorant, sans-serif;
 }
+body .bg-sampul {
+	background-image: url(./asset/sampul.png);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: comorant, sans-serif;
+}
+@media all and (min-width: 1024px) {
+	body .bg-sampul {
+		background-image: url(./asset/sampul.png);
+		height: auto;
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-family: comorant, sans-serif;
+	}
+}
+@media only screen and (max-width: 767px) {
+	body .bg-sampul {
+		background-image: url(./asset/sampul.png);
+		height: auto;
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-family: comorant, sans-serif;
+	}
+}
+
 .container1 {
 	background-image: url(./asset/bg-pengantin.png);
 	background-repeat: no-repeat;
@@ -25,7 +51,7 @@ body.bg-sampul {
 }
 .container2 {
 	background-image: url(./asset/bg-rsvp.png);
-	height: 100%;
+	height: 1000px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: comorant, sans-serif;
@@ -49,7 +75,7 @@ body.bg-sampul {
 	}
 	.container2 {
 		background-image: url(./asset/bg-rsvp.png);
-		height: 100%;
+		/* height: 100%; */
 		background-repeat: no-repeat;
 		background-size: cover;
 		font-family: comorant, sans-serif;

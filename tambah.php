@@ -4,14 +4,12 @@ include "koneksi.php";
 
 // menangkap data dari form
 
-$id = $_POST['id_pesan'];
 $nama = $_POST['nama'];
-$pesan  = $_POST['pesan'];
-$kehadiran = $_POST['kehadiran'];
+$pesan = $_POST['pesan'];
 
 
 // kirim data ke db
-mysqli_query($conn,"INSERT INTO rsvp VALUES ('','$nama','$pesan','$kehadiran')");
+mysqli_query($conn,"INSERT INTO pesan VALUES ('$nama','$pesan')");
 
 
 header("Location: rsvp.php");
