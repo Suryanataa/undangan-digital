@@ -22,7 +22,7 @@ $data = mysqli_fetch_array($query)
                 style="z-index: 100; right:15px; bottom:200px; position:fixed; background-color:rgb(154, 108, 7)"
                 onclick="toggleMusic()" id="btn-playback" data-play="false">
                 <i class="fa fa-play"></i>
-                <span id="btn-text">PLAY</span>
+                <span id="btn-text">PAUSE</span>
             </button>
             <div class="row d-flex justify-content-center">
                 <div class="card-rsvp">
@@ -125,7 +125,7 @@ $data = mysqli_fetch_array($query)
                 </ul>
             </div>
         </div>
-        <audio id="audio" src="./Perfect - Ed Sheeran (Lyrics)_UDDMYw_IZnE.mp3" />
+        <audio id="audio" src="./Marry Your Daughter - Brian McKnight (animation)_jP6eEKrghGI.mp3" autoplay />
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
@@ -140,17 +140,17 @@ $data = mysqli_fetch_array($query)
             const dataPlay = btn.getAttribute("data-play");
 
             if (dataPlay === "false") {
-                btn.setAttribute("data-play", "true");
-                myAudio.play();
-                btnIcon.classList.remove("fa-play");
-                btnIcon.classList.add("fa-pause");
-                btnText.innerText = "PAUSE";
-            } else {
                 btn.setAttribute("data-play", "false");
                 myAudio.pause();
                 btnIcon.classList.remove("fa-pause");
                 btnIcon.classList.add("fa-play");
                 btnText.innerText = "PLAY";
+            } else {
+                btn.setAttribute("data-play", "true");
+                myAudio.play();
+                btnIcon.classList.remove("fa-play");
+                btnIcon.classList.add("fa-pause");
+                btnText.innerText = "PAUSE";
             }
         };
 
